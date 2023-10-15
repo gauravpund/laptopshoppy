@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<display-name>RegisterServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>AdminLoginServlet</servlet-name>
+  	<display-name>AdminLoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.admin.servlet.AdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminLogout</servlet-name>
+  	<display-name>AdminLogout</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.admin.servlet.AdminLogout</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserLogout</servlet-name>
+  	<display-name>UserLogout</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.UserLogout</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>CategoryServlet</servlet-name>
+  	<display-name>CategoryServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ProductServlet</servlet-name>
+  	<display-name>ProductServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.ProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ChangePassword</servlet-name>
+  	<display-name>ChangePassword</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.ChangePassword</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ForgotPassword</servlet-name>
+  	<display-name>ForgotPassword</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.ForgotPassword</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DashboardServlet</servlet-name>
+  	<display-name>DashboardServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.DashboardServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>CartServlet</servlet-name>
+  	<display-name>CartServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.CartServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CartQuantityServlet</servlet-name>
+  	<display-name>CartQuantityServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.CartQuantityServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteCartServletProduct</servlet-name>
+  	<display-name>DeleteCartServletProduct</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.DeleteCartServletProduct</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CartQuantityPriceServlet</servlet-name>
+  	<display-name>CartQuantityPriceServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.CartQuantityServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CartJspServlet</servlet-name>
+  	<display-name>CartJspServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.CartJspServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>OrderServlet</servlet-name>
+  	<display-name>OrderServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.servlets.OrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CategoryDelete</servlet-name>
+  	<display-name>CategoryDelete</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.admin.servlet.CategoryDelete</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ProductDelete</servlet-name>
+  	<display-name>ProductDelete</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.admin.servlet.ProductDelete</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddAdminServlet</servlet-name>
+  	<display-name>AddAdminServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.mypackage.admin.servlet.AddAdminServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AdminLoginServlet</servlet-name>
+  	<url-pattern>/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AdminLogout</servlet-name>
+  	<url-pattern>/AdminLogout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>UserLogout</servlet-name>
+  	<url-pattern>/UserLogout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>CategoryServlet</servlet-name>
+  	<url-pattern>/CategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ProductServlet</servlet-name>
+  	<url-pattern>/ProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ChangePassword</servlet-name>
+  	<url-pattern>/ChangePassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ForgotPassword</servlet-name>
+  	<url-pattern>/ForgotPassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DashboardServlet</servlet-name>
+  	<url-pattern>/DashboardServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+  	<servlet-name>CartServlet</servlet-name>
+  	<url-pattern>/CartServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>DeleteCartServletProduct</servlet-name>
+  	<url-pattern>/DeleteCartServletProduct</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>CartJspServlet</servlet-name>
+  	<url-pattern>/CartJspServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>OrderServlet</servlet-name>
+  	<url-pattern>/OrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CategoryDelete</servlet-name>
+  	<url-pattern>/CategoryDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>ProductDelete</servlet-name>
+  	<url-pattern>/ProductDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AddAdminServlet</servlet-name>
+  	<url-pattern>/AddAdminServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>com.mypackage.payment.YourServlet</servlet-class>
+    </servlet>
+    
+   
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/YourServlet</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
